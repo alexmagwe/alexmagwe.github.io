@@ -1,0 +1,123 @@
+.services-content {
+    width: 100%;
+    padding: 1em;
+    margin: auto;
+    margin-top: 3em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.service {
+    width: 23%;
+    backdrop-filter: blur(5px);
+    height: 20em;
+    cursor: pointer;
+    float: left;
+    margin: 0.5em;
+    perspective: 2000px;
+}
+
+@font-face {
+    font-family: halfomania;
+    src: url(fonts/Halfomania-Regular.otf);
+}
+
+.card {
+    background-color: #1116;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    height: 100%;
+    padding: 1em;
+    transition: transform 0.8s ease-out;
+    transform-origin: center right;
+}
+
+.card:hover {
+    background-color: #0009;
+}
+
+.card:hover .front h2,
+.card:active .front h2 {
+    font-size: 2.2em;
+}
+
+.service .card .front,
+.service .card .back {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    padding-top: 20%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front {
+    background: transparent;
+}
+
+.front img {
+    width: 8em;
+    height: 8em;
+}
+
+.front h2,
+.back a h2 {
+    margin-top: 1em;
+    color: #b9d8c2;
+    transition: 0.5s ease-in-out;
+    font-family: halfomania;
+    font-size: 2em;
+}
+
+.back {
+    background: transparent;
+    overflow: hidden;
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.back p {
+    padding: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    height: 12em;
+}
+
+.readmore {
+    background-color: rgba(255, 72, 0, 0.63);
+    height: 2em;
+    padding: 0.5em;
+}
+
+.readmore:hover {
+    background-color: rgba(255, 72, 0, 1);
+}
+
+
+/* .switch { 
+    transform: rotateY(180deg); 
+    
+    transform: translateX(-100%) rotateY(180deg);
+}*/
+
+.service:hover .card {
+    transform: rotateY(180deg);
+    transform: translateX(-100%) rotateY(180deg);
+}
+
+@media screen and (max-width:600px) {
+    .service {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+    .back p {
+        height: 10em;
+    }
+}
