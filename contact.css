@@ -85,15 +85,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        /* .hire-us:hover {
-            cursor: pointer;
-            text-shadow: 2px 2px 8px #FFF9;
-        }
-        
-        .hire-us:focus {
-            box-shadow: 7px 7px 20px 0 #1111;
-            transform: scale(1.1);
-        }*/
+ 
         
         .contact-card img {
             background-position: center;
@@ -181,10 +173,7 @@
         }
         
         @media screen and (max-width: 600px) {
-            .hire-us:active {
-                box-shadow: -7px -7px 50px 0 #fff1, 7px 7px 50px 0 #1111;
-                transform: scale(0.5);
-            }
+          
             .contactus form input {
                 width: 100%;
             }
