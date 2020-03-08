@@ -27,6 +27,7 @@
 
 .card {
     background-color: #1116;
+    box-shadow: -7px -7px 20px 5px #fff1, 7px 7px 20px 5px #000;
     width: 100%;
     position: relative;
     transform-style: preserve-3d;
