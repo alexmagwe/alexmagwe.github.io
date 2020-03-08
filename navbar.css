@@ -27,6 +27,7 @@ body {
     background: url(imgs/beach.jpg);
     background-attachment: fixed;
     background-size: cover;
+    -webkit-overflow-scrolling: touch;
 }
 
 .main-container {
