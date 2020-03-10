@@ -79,13 +79,11 @@
             text-shadow: 7px 7px 10px 0 #1118;
             font-size: 4em;
             padding: 0.1em;
-            transition: 0.3s ease-in;
             text-shadow: 2px 2px 8px #FFF4;
             background: radial-gradient(rgba(255, 214, 32, 0.842), #fff, #e7c17fff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
- 
         
         .contact-card img {
             background-position: center;
@@ -113,7 +111,7 @@
             box-shadow: 7px 7px 10px 0 #1118;
             color: #23231a;
             font-family: "Droid Serif", Georgia, Times, serif;
-            transition: 0.4s;
+            transition: 0.2s;
         }
         
         .contactus button:hover {
@@ -173,7 +171,6 @@
         }
         
         @media screen and (max-width: 600px) {
-          
             .contactus form input {
                 width: 100%;
             }

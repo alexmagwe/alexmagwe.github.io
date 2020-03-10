@@ -1,5 +1,10 @@
 .services-content {
+    background-image: url(imgs/sunset3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     width: 100%;
+    height: 100vh;
     padding: 1em;
     margin: auto;
     margin-top: 3em;
@@ -33,7 +38,7 @@
     transform-style: preserve-3d;
     height: 100%;
     padding: 1em;
-    transition: transform 0.8s ease-out;
+    transition: transform 0.5s ease-out;
     transform-origin: center right;
 }
 
@@ -121,4 +126,9 @@
     .back p {
         height: 10em;
     }
+}
+
+.landing {
+    height: 100vh;
+    width: 100%;
 }
