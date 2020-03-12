@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    $(window).trigger('resize').trigger('scroll');
+
     $menuicon = $('.right-nav ');
     $menuicon.click(function() {
         $('#menu-icon ').toggleClass('close ');
@@ -7,6 +9,7 @@ $(document).ready(function() {
 
     });
 
+    $(window).trigger('resize').trigger('scroll');
 
     $loadingtime = 3000;
 

@@ -1,11 +1,14 @@
 .services-content {
-    background-image: url(imgs/sunset3.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    /* background-image: url(imgs/sunset2.jpg); */
+    /* background: transparent; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
     width: 100%;
     height: 100vh;
-    padding: 1em 1em 1em 7em;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
 }
 
 * {
@@ -27,11 +30,11 @@
 }
 
 .service {
-    width: 20%;
+    width: 22%;
     backdrop-filter: blur(5px);
-    height: 18em;
+    height: 19em;
     cursor: pointer;
-    float: left;
+    /* float: left; */
     margin: 1em;
     perspective: 2000px;
 }
@@ -39,6 +42,7 @@
 @font-face {
     font-family: halfomania;
     src: url(fonts/Halfomania-Regular.otf);
+    font-display: swap;
 }
 
 .card {
@@ -76,6 +80,7 @@
 }
 
 .front {
+    padding: 2px;
     background: transparent;
 }
 
@@ -133,6 +138,9 @@
     .service {
         width: 100%;
         margin: 0.5em 0;
+    }
+    .service-content {
+        padding: 0;
     }
     .back p {
         height: 10em;
