@@ -2,10 +2,10 @@ $(document).ready(function() {
     function parallaxed() {
         $offset = $(window).scrollTop();
         $bgmove = $offset * -0.2 + 'px'
-        console.log($bgmove)
+
         $('.landing,.services-content,.contact-card').css('backgroundPositionY', $bgmove);
-        if ($offset > 300) {
-            $bgmove = ($offset - 300) * -0.2 + 'px';
+        if ($offset > 250) {
+            $bgmove = ($offset - 250) * -0.2 + 'px';
 
 
             $('.contact-card').css('backgroundPositionY', $bgmove);

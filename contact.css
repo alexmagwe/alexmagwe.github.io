@@ -14,7 +14,7 @@
             background: url(imgs/phone.jpg);
             border: none;
             background-position: center;
-            /* background-attachment: fixed; */
+            background-attachment: fixed;
             background-repeat: no-repeat;
             padding: 1em;
             text-align: center;
@@ -87,10 +87,9 @@
         }
         
         .contact-card img {
-            background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed;
+            height: 150%;
         }
         
         .contact-container {
@@ -117,7 +116,6 @@
         
         .contactus button:hover {
             background: #fe5f00;
-            /* transform: scale(1.1); */
         }
         
         .contactus {
@@ -163,25 +161,17 @@
             width: 50%;
         }
         
-        #bg-video {
-            z-index: -1;
-            position: absolute;
-            width: 100%;
-            top: 0;
-            height: 100;
-            left: 0;
-        }
-        
         @media screen and (max-width: 600px) {
             .contactus form input {
                 width: 100%;
+                margin: 1em auto;
             }
             .email-container {
                 overflow: scroll;
             }
             .contactus form textarea {
                 width: 100%;
+                margin: auto;
                 resize: none;
             }
         }
-        /*social links*/

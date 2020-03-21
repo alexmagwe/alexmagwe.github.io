@@ -53,10 +53,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #6A5837;
-}
-
 .navbar {
     z-index: 1000;
     display: flex;
@@ -101,6 +97,11 @@ a:hover {
     line-height: 25px;
     outline: none;
     padding: 1px 1em;
+}
+
+.left-nav-items li a:hover {
+    transition: 0.2s ease-in;
+    color: #fff;
 }
 
 .right-nav {
