@@ -133,6 +133,7 @@
         .contactus h2 {
             background: -webkit-linear-gradient(#eee, #e7c17fff);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         
