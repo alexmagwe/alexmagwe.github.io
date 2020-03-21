@@ -82,6 +82,7 @@
             text-shadow: 2px 2px 8px #FFF4;
             background: radial-gradient(rgba(255, 214, 32, 0.842), #fff, #e7c17fff);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         
