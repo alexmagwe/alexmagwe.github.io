@@ -1,14 +1,20 @@
 $(document).ready(function() {
-    $(window).trigger('resize').trigger('scroll');
+    function parallaxed() {
+        $offset = $(window).scrollTop();
+        $bgmove = $offset * -0.2 + 'px'
+        console.log($offset)
+        $('.landing,.services-content,.contact-card').css('backgroundPositionY', $bgmove);
+        return;
+    };
+
 
     $menuicon = $('.right-nav ');
     $menuicon.click(function() {
         $('#menu-icon ').toggleClass('close ');
+        $('main').toggleClass('fade');
         $('.toggler ').toggleClass('hide ');
 
-
     });
-
     $(window).trigger('resize').trigger('scroll');
 
     $loadingtime = 3000;
@@ -16,7 +22,9 @@ $(document).ready(function() {
     $('.loading ').fadeOut($loadingtime);
 
 
-    window.setTimeout(function() { $('.main-container').slideDown(1300) }, $loadingtime / 2);
+    window.setTimeout(function() { $('.main-container').fadeIn(1300) }, $loadingtime / 2);
     clearTimeout(window);
+    $(window).on('scroll', function() { parallaxed() });
+
 
 })

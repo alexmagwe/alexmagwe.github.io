@@ -35,7 +35,7 @@
             padding-top: 5em;
             width: 100%;
             text-align: center;
-            height: 40vh;
+            height: 30vh;
             position: relative;
             top: 4em;
             overflow: hidden;
@@ -64,7 +64,7 @@
             height: 100%;
             left: 0;
             right: 0;
-            background: #0009;
+            background: #0008;
         }
         
         .hire-us {
@@ -106,16 +106,16 @@
             font-weight: 800;
             margin: auto;
             display: block;
-            background-color: #fe5f00;
+            background-color: #fe5d00d8;
             box-shadow: 7px 7px 10px 0 #1118;
-            color: #23231a;
+            color: #fff;
             font-family: "Droid Serif", Georgia, Times, serif;
             transition: 0.2s;
         }
         
         .contactus button:hover {
-            color: #6a5837;
-            transform: scale(1.1);
+            background: #fe5f00;
+            /* transform: scale(1.1); */
         }
         
         .contactus {

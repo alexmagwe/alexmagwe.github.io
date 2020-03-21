@@ -24,7 +24,7 @@ p {
 
 body {
     color: #EFD6AC;
-    background: url(imgs/beach.jpg);
+    background: url(imgs/sky.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -277,6 +277,11 @@ a:hover {
     }
 }
 
+.fade {
+    filter: blur(8px);
+    background: #000;
+}
+
 
 /*end of loading screen css*/
 
@@ -285,11 +290,14 @@ a:hover {
 
 @media screen and (max-width: 600px) {
     .toggler {
-        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 4em;
+        width: 0;
         margin: 0;
         backdrop-filter: blur(10px);
         background-color: #000;
-        height: 0;
+        height: 100vh;
         overflow: hidden;
         align-content: flex-start;
     }
@@ -300,8 +308,8 @@ a:hover {
         width: 100%;
     }
     .hide {
-        height: 250px;
-        transition: 1s;
+        width: 40%;
+        transition: 0.5s;
     }
     .right-nav {
         display: block;
@@ -316,6 +324,11 @@ a:hover {
     }
     #social a {
         display: inline-block;
+        width: 5px;
+    }
+    .fa {
+        width: 10px;
+        height: 10px;
     }
     #logo {
         width: 8em;
