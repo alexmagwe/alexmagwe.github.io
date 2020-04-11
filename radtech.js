@@ -1,17 +1,10 @@
 $(document).ready(function() {
     function parallaxed() {
         $offset = $(window).scrollTop();
-        $bgmove = $offset * -0.2 + 'px'
+        $bgmove = $offset * -0.1 + 'px'
 
-        $('.landing,.services-content,.contact-card').css('backgroundPositionY', $bgmove);
-        if ($offset > 250) {
-            $bgmove = ($offset - 250) * -0.2 + 'px';
+        $('.contactus').css('backgroundPositionY', $bgmove);
 
-
-            $('.contact-card').css('backgroundPositionY', $bgmove);
-
-
-        }
         return;
     };
 
@@ -21,6 +14,13 @@ $(document).ready(function() {
         $('#menu-icon ').toggleClass('close ');
         $('main').toggleClass('fade');
         $('.toggler ').toggleClass('hide ');
+        $('main').on('click',
+            function() {
+                $('.toggler ').removeClass('hide');
+                $('main').removeClass('fade');
+
+            })
+
 
     });
     $(window).trigger('resize').trigger('scroll');

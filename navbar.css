@@ -136,7 +136,7 @@ a {
 .fa-facebook {
     border-radius: 48%;
     background-color: #0b487c;
-    margin: 2em;
+    margin: 1em;
     padding: 2em;
     color: #fff;
 }
@@ -146,7 +146,7 @@ a {
     background-color: rgb(56, 181, 219);
     padding: 2em;
     color: #fff;
-    margin: 2em;
+    margin: 1em;
 }
 
 .fa-google {
@@ -154,7 +154,7 @@ a {
     background-color: rgb(240, 40, 40);
     padding: 2em;
     color: rgb(255, 255, 255);
-    margin: 2em;
+    margin: 1em;
 }
 
 .fa-phone {
@@ -163,7 +163,7 @@ a {
     background-color: blue;
     padding: 2em;
     z-index: 1;
-    margin: 2em;
+    margin: 1em;
 }
 
 

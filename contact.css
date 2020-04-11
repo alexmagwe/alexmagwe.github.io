@@ -68,19 +68,19 @@
         }
         
         .hire-us {
-            z-index: 10;
-            width: 5em;
-            margin-left: -2.5em;
+            z-index: -1;
+            top: 0;
+            width: 100vw;
+            /* position: absolute; */
             display: inline-block;
             font-family: halfomania;
             font-weight: 700;
             text-align: center;
-            position: absolute;
             text-shadow: 7px 7px 10px 0 #1118;
-            font-size: 4em;
-            padding: 0.1em;
+            font-size: 3em;
+            padding: 0 0 2px 0;
             text-shadow: 2px 2px 8px #FFF4;
-            background: radial-gradient(rgba(255, 214, 32, 0.842), #fff, #e7c17fff);
+            background: radial-gradient(rgb(255, 113, 31), rgb(2, 1, 1), rgb(255, 255, 255));
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
