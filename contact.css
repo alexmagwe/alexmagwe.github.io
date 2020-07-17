@@ -6,65 +6,40 @@
         }
         
         h2 {
-            font-family: halfomania;
-            font-size: 2em;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
         
         .contact-card {
-            background: url(imgs/phone.jpg);
+            background: rgb(243, 243, 243);
             border: none;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
             padding: 1em;
-            text-align: center;
+            padding-left: 6em;
+            /* text-align: center; */
             width: 100%;
-            margin-left: 0;
-            background-size: cover;
             position: relative;
         }
         
         .contact-card p {
             color: #000;
-            font-weight: 900;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 1.5em;
+            font-weight: 600;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 1.2em;
+            line-height: 1.5em;
         }
         
         .topdiv {
             padding-top: 5em;
             width: 100%;
             text-align: center;
-            height: 30vh;
+            height: 20vh;
             position: relative;
             top: 4em;
             overflow: hidden;
         }
         
-        #contact-svg {
-            position: absolute;
-            width: 100%;
-            top: 0;
-            height: 100%;
-            background-image: url(imgs/sunset2.jpg);
-            background-attachment: fixed;
-        }
-        
         @font-face {
             font-family: halfomania;
             src: url(fonts/Halfomania-Regular.otf);
-        }
-        /* top image darkener*/
-        
-        .darken {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            left: 0;
-            right: 0;
-            background: #0008;
         }
         
         .hire-us {
@@ -73,23 +48,17 @@
             width: 100vw;
             /* position: absolute; */
             display: inline-block;
-            font-family: halfomania;
+            font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-weight: 700;
             text-align: center;
-            text-shadow: 7px 7px 10px 0 #1118;
-            font-size: 3em;
+            font-size: 2em;
+            word-wrap: break;
             padding: 0 0 2px 0;
             text-shadow: 2px 2px 8px #FFF4;
-            background: radial-gradient(rgb(255, 113, 31), rgb(2, 1, 1), rgb(255, 255, 255));
+            background: radial-gradient(rgb(255, 187, 0), rgb(2, 1, 1), rgb(255, 255, 255));
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-        }
-        
-        .contact-card img {
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 150%;
         }
         
         .contact-container {
@@ -106,9 +75,11 @@
             cursor: pointer;
             font-weight: 800;
             margin: auto;
+            border-radius: 5px;
+            margin-top: 10px;
             display: block;
             background-color: #fe5d00d8;
-            box-shadow: 7px 7px 10px 0 #1118;
+            box-shadow: 1px 1px 2px 0 rgba(53, 51, 51, 0.533);
             color: #fff;
             font-family: "Droid Serif", Georgia, Times, serif;
             transition: 0.2s;
@@ -119,21 +90,17 @@
         }
         
         .contactus {
-            background: #0009;
             margin: 0;
             position: relative;
             left: 0;
-            color: #6a5837;
+            color: #111;
             text-align: center;
             padding: 2em;
             padding-top: 5em;
         }
         
         .contactus h2 {
-            background: -webkit-linear-gradient(#eee, #e7c17fff);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #111;
         }
         
         .contactus form {
@@ -141,15 +108,15 @@
         }
         
         .contactus form input {
-            color: #fff9;
+            color: rgb(54, 52, 52);
             border: none;
             background-color: inherit;
             font-weight: 700;
-            border-bottom: 2px solid #fe5f00;
+            border-bottom: 1px solid #fe5f00;
             display: inline-block;
             width: 40%;
-            padding: 2px;
-            margin: 1em;
+            padding: 4px;
+            margin: 2em;
             font-size: 1em;
             outline: none;
         }
@@ -173,5 +140,9 @@
                 width: 100%;
                 margin: auto;
                 resize: none;
+            }
+            .contact-card {
+                padding: 1em;
+                padding-left: 2em;
             }
         }
