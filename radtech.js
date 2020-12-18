@@ -1,4 +1,16 @@
 $(document).ready(function() {
+    $(window).on('scroll',()=>{
+        if ($(window).scrollTop()>0){
+            $('.navbar').addClass('stickytop')
+        }
+        else{
+            $('.navbar').removeClass('stickytop')
+
+        }
+    })
+   
+
+
     function parallaxed() {
         $offset = $(window).scrollTop();
         $bgmove = $offset * -0.1 + 'px'
