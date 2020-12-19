@@ -42,7 +42,7 @@ $(document).ready(function() {
     $('.loading ').fadeOut($loadingtime);
 
 
-    window.setTimeout(function() { $('.main-container').fadeIn(1300) }, $loadingtime / 2);
+    window.setTimeout(function() { $('.main-container').fadeIn(3000) }, $loadingtime/2);
     clearTimeout(window);
     $(window).on('scroll', function() { parallaxed() });
 

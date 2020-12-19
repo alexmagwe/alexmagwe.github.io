@@ -21,11 +21,12 @@
         }
 
         body {
-            color: #EFD6AC;
-            background: url(imgs/hazmat2.jpg);
+            color:#fff;
+            background:#fff;
             background-size: cover;
             background-position: center;
-            background-color: #ffffff;
+            background-repeat: no-repeat;
+            /* background-color: #f3f3f3; */
         }
 
         body>div {
@@ -102,7 +103,7 @@
 
         .left-nav-items li a:hover {
             transition: 0.2s ease-in;
-            color: #e9e20e;
+            color: rgb(235, 185, 60);
         }
 
         .right-nav {
